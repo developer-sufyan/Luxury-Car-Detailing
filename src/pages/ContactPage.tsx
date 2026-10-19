@@ -87,9 +87,9 @@ export default function ContactPage() {
                       <MapPin size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-white text-xs uppercase tracking-wider font-medium">Atelier Location</p>
-                      <p className="text-white/60 text-xs font-light mt-0.5">840 North Sycamore Avenue, Suite 100</p>
-                      <p className="text-white/40 text-xs font-light">West Hollywood, CA 90038</p>
+                      <p className="text-white text-xs uppercase tracking-wider font-medium">Location</p>
+                      <p className="text-white/60 text-xs font-light mt-0.5">Karachi, Pakistan</p>
+                      <p className="text-white/40 text-xs font-light">DHA Phase 8, Karachi</p>
                     </div>
                   </div>
 
@@ -98,9 +98,8 @@ export default function ContactPage() {
                       <Phone size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-white text-xs uppercase tracking-wider font-medium">Concierge Direct</p>
-                      <p className="text-white/60 text-xs font-light mt-0.5">+1 (800) 849-2910</p>
-                      <p className="text-white/40 text-xs font-light">Direct phone or secure text</p>
+                      <p className="text-white text-xs uppercase tracking-wider font-medium">Phone</p>
+                      <p className="text-white/60 text-xs font-light mt-0.5">+92 300 2167674</p>
                     </div>
                   </div>
 
@@ -196,7 +195,7 @@ export default function ContactPage() {
                           required
                           value={formData.name}
                           onChange={e => setFormData({ ...formData, name: e.target.value })}
-                          placeholder="e.g. Lord Marcus Sterling"
+                          placeholder="Mohammad Sufyan"
                           className="w-full bg-black border border-white/15 rounded-sm px-4 py-2.5 text-white text-sm focus:border-white focus:outline-none transition-colors"
                         />
                       </div>
@@ -209,7 +208,7 @@ export default function ContactPage() {
                           required
                           value={formData.email}
                           onChange={e => setFormData({ ...formData, email: e.target.value })}
-                          placeholder="name@domain.com"
+                          placeholder="sufyan@gmail.com"
                           className="w-full bg-black border border-white/15 rounded-sm px-4 py-2.5 text-white text-sm focus:border-white focus:outline-none transition-colors"
                         />
                       </div>
@@ -218,19 +217,19 @@ export default function ContactPage() {
 
                   <div>
                     <label className="text-white/70 text-xs block mb-1.5 font-light">
-                      Direct Telephone / Mobile *
+                      Mobile *
                     </label>
                     <input
                       type="tel"
                       required
                       value={formData.phone}
                       onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+92 300 2167674"
                       className="w-full bg-black border border-white/15 rounded-sm px-4 py-2.5 text-white text-sm focus:border-white focus:outline-none transition-colors"
                     />
                   </div>
 
-                  <div className="border-t border-white/10 pt-6">
+                  {/* <div className="border-t border-white/10 pt-6">
                     <span className="text-white/40 text-[11px] uppercase tracking-widest block mb-2">
                       Step 02 · Vehicle Profile
                     </span>
@@ -301,7 +300,7 @@ export default function ContactPage() {
                         </select>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="border-t border-white/10 pt-6">
                     <label className="text-white/70 text-xs block mb-1.5 font-light">
@@ -324,7 +323,7 @@ export default function ContactPage() {
                     type="submit"
                     className="w-full mt-2 bg-white text-black font-medium text-xs uppercase tracking-widest py-3.5 rounded-sm hover:bg-white/85 transition-colors flex items-center justify-center gap-2 cursor-pointer"
                   >
-                    Transmit Commission Request
+                    Contact
                     <ArrowUpRight size={16} />
                   </button>
                 </form>
