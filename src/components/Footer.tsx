@@ -149,7 +149,7 @@ function Footer() {
               fontSize: '12px',
             }}
           >
-            LuxureDetails © {new Date().getFullYear()}
+            LuxureDetails © {new Date().getFullYear()} by Mohammad Sufyan with ❤️
           </span>
           <div className="flex gap-4 flex-wrap">
             <Link
