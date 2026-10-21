@@ -10,13 +10,15 @@ const footerLinks = {
   contact: [
     { label: 'Get a quote', href: '/contact' },
     { label: 'Contact form', href: '/contact' },
-    { label: 'Email us', href: 'mailto:concierge@luxuredetails.com' },
+    { label: 'Email us', href: '#' },
   ],
   social: [
-    { label: 'Instagram', href: 'https://instagram.com' },
-    { label: 'YouTube', href: 'https://youtube.com' },
+    { label: 'Instagram', href: 'https://www.instagram.com/_sufyan.qadir' },
+    { label: 'Github', href: 'https://github.com/developer-sufyan' },
     { label: 'X (Twitter)', href: 'https://x.com' },
-    { label: 'LinkedIn', href: 'https://linkedin.com' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/sufyan-abdul-qadir' },
+
+
   ],
 }
 

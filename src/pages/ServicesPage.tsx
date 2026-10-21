@@ -115,8 +115,8 @@ const processSteps = [
 export default function ServicesPage() {
   const [activeTab, setActiveTab] = useState<'all' | 'maintenance' | 'paint' | 'coatings' | 'interior'>('all')
 
-  const filtered = activeTab === 'all' 
-    ? allServices 
+  const filtered = activeTab === 'all'
+    ? allServices
     : allServices.filter(s => s.category === activeTab)
 
   return (
@@ -167,11 +167,10 @@ export default function ServicesPage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as typeof activeTab)}
-                className={`px-4 py-2 text-xs uppercase tracking-wider rounded-sm transition-all duration-300 ${
-                  activeTab === tab.id
+                className={`px-4 py-2 text-xs uppercase tracking-wider rounded-sm transition-all duration-300 ${activeTab === tab.id
                     ? 'bg-white text-black font-medium'
                     : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
-                }`}
+                  }`}
                 style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 {tab.label}

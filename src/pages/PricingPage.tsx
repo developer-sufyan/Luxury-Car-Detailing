@@ -142,11 +142,10 @@ export default function PricingPage() {
                 <button
                   key={cls.id}
                   onClick={() => setSelectedClass(cls)}
-                  className={`p-4 rounded-sm border text-left transition-all duration-300 ${
-                    selectedClass.id === cls.id
+                  className={`p-4 rounded-sm border text-left transition-all duration-300 ${selectedClass.id === cls.id
                       ? 'border-white bg-white/10'
                       : 'border-white/10 bg-[hsl(0_0%_5%)] hover:border-white/30'
-                  }`}
+                    }`}
                 >
                   <p className="text-white text-xs font-semibold uppercase tracking-wider mb-1">
                     {cls.name}
@@ -170,11 +169,10 @@ export default function PricingPage() {
               return (
                 <motion.div
                   key={pkg.name}
-                  className={`relative rounded-sm p-8 flex flex-col justify-between transition-all duration-300 ${
-                    pkg.popular
+                  className={`relative rounded-sm p-8 flex flex-col justify-between transition-all duration-300 ${pkg.popular
                       ? 'bg-[hsl(0_0%_9%)] border-2 border-white'
                       : 'bg-[hsl(0_0%_6%)] border border-white/10 hover:border-white/30'
-                  }`}
+                    }`}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
@@ -227,11 +225,10 @@ export default function PricingPage() {
 
                   <Link
                     to="/contact"
-                    className={`w-full py-3 text-center text-xs uppercase tracking-widest font-medium rounded-sm transition-all duration-300 block ${
-                      pkg.popular
+                    className={`w-full py-3 text-center text-xs uppercase tracking-widest font-medium rounded-sm transition-all duration-300 block ${pkg.popular
                         ? 'bg-white text-black hover:bg-white/80'
                         : 'border border-white/30 text-white hover:bg-white hover:text-black'
-                    }`}
+                      }`}
                   >
                     Reserve Commission
                   </Link>
@@ -332,9 +329,8 @@ export default function PricingPage() {
                       </span>
                       <ChevronDown
                         size={16}
-                        className={`text-white/60 shrink-0 transition-transform duration-300 ${
-                          isOpen ? 'rotate-180' : ''
-                        }`}
+                        className={`text-white/60 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''
+                          }`}
                       />
                     </button>
                     {isOpen && (
